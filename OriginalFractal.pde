@@ -8,7 +8,7 @@ public void setup()
 
 public void draw()
 {
-	background();
+	background(0);
 	stroke(200,0,0);
 	ellipse(400,400,80,80);
 	drawWhirl(400,400,3*Math.PI/2);
@@ -17,11 +17,11 @@ public void draw()
 
 public void drawWhirl(int x, int y, double angle)
 {
-	double angle1 = angle + whirlLength;
-	double angle2 = angle - whirlLength;
-	ellipse(x,y);
+	double angle1 = angle + loopangle;
+	int startX1 = (int) ()
 	
-
+	ellipse(x,y,);
+	
 
 }
 
