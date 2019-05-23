@@ -2,26 +2,26 @@ private double whirlLength = .5;
 private double loopangle = .2;
 public void setup()
 {
-	size(800,800);
-	noLoop();
+	size(700,700);
+	ellipseMode(CENTER);
 }
 
 public void draw()
 {
-	background(0);
-	stroke(200,0,0);
-	ellipse(400,400,80,80);
-	drawWhirl(400,400,3*Math.PI/2);
+	background(250);
+	stroke(200,50,50);
+	fill(200,50,50);
+	drawWhirl(350,350,80);
 
 }
 
-public void drawWhirl(int x, int y, double angle)
+public void drawWhirl(int x, int y, int big)
 {
-	double angle1 = angle + loopangle;
-	int startX1 = (int) ()
-	
-	ellipse(x,y,);
-	
+	ellipse(x,y,big,big);
+	if(big > 20)
+	{
+		drawWhirl(x - big/2,y-big,big);
+	}
 
 }
 
